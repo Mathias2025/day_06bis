@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #7EC855;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+.shopping-cart, .product-list {
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+  padding: 20px;
+  width: 48%; /* Adaptation à 2 colonnes */
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #5E6977;
+  border-bottom: 1px solid #E1E8EE;
+  padding-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.description span {
+  font-size: 14px;
+  color: #43484D;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity input {
+  width: 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  background-color: #E1E8EE;
+  border: none;
+  padding: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.total {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.total-price {
+  font-size: 20px;
+  color: #43484D;
+}
+
+/* Media Queries - Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Disposition en colonne sur petits écrans */
+  }
+
+  .shopping-cart, .product-list {
+    width: 100%; /* Prendre toute la largeur sur petits écrans */
+  }
+
+  .item {
+    flex-direction: column; /* Afficher les éléments en colonne sur petits écrans */
+    align-items: flex-start;
+  }
+
+  .quantity {
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+
+  .description {
+    margin-bottom: 10px;
+  }
+
+  .total {
+    text-align: left;
+  }
+}
+
+/* Adjust for even smaller screens like mobile phones */
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 16px;
+  }
+
+  .description span {
+    font-size: 12px;
+  }
+
+  .quantity input {
+    width: 28px;
+    font-size: 14px;
+  }
+
+  .total-price {
+    font-size: 18px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: #dccd30;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-list, .shopping-cart {
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+  padding: 20px;
+  width: 48%;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.item img {
+  max-width: 100px;
+  height: auto;
+}
+
+.add-to-cart-btn {
+  background-color: #E1E8EE;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
